@@ -3,7 +3,7 @@
 
 ![image](diagram.png)
 
-## Aplicação para demonstrae como criar uma arquitetura básica para autenticação de usuários e exposição de uma API na AWS utilizando o AWS Cloud Development Kit (CDK) Python.
+## Aplicação para demonstrar como criar uma arquitetura básica para autenticação de usuários e exposição de uma API na AWS utilizando o AWS Cloud Development Kit (CDK) Python.
 
 ### Que inclui:
 
