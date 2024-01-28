@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "cdk-cognito-auth"
+version = "0.1.0"
+description = "Repo to deploy an auth API using AWS API Gateway, AWS Lambda and AWS Cognito"
+authors = ["Ícaro Abreu <oicaroabreu@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.8.12"
+constructs = "^10.3.0"
+aws-cdk-lib = "^2.124.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
