@@ -1,58 +1,56 @@
 
-# Welcome to your CDK Python project!
+# Desenvolvimento de APIs Seguras com Amazon Cognito e AWS API Gateway
 
-This is a blank project for CDK development with Python.
+![image](diagram.png)
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Aplicação para demonstrae como criar uma arquitetura básica para autenticação de usuários e exposição de uma API na AWS utilizando o AWS Cloud Development Kit (CDK) Python.
 
-This project is set up like a standard Python project.  The initialization
-process also creates a virtualenv within this project, stored under the `.venv`
-directory.  To create the virtualenv it assumes that there is a `python3`
-(or `python` for Windows) executable in your path with access to the `venv`
-package. If for any reason the automatic creation of the virtualenv fails,
-you can create the virtualenv manually.
+### Que inclui:
 
-To manually create a virtualenv on MacOS and Linux:
+- Um pool de usuários do Amazon Cognito para autenticação de usuários, com configurações de senha e atributos personalizados.
+- Um cliente do Amazon Cognito para autenticação de aplicativos móveis ou web.
+- Uma função Lambda que é invocada quando uma chamada é feita à API.
+- Um autorizador de usuários do Amazon Cognito para proteger a API.
+- Uma API RESTful integrada à função Lambda e protegida pelo autorizador do Amazon Cognito.
+
+## Instruções para testar
+Para criar manualmente um virtualenv no MacOS e Linux:
 
 ```
 $ python3 -m venv .venv
 ```
 
-After the init process completes and the virtualenv is created, you can use the following
-step to activate your virtualenv.
+Após o processo de inicialização ser concluído e o virtualenv ser criado, você pode usar as seguintes
+etapas para ativar o seu virtualenv.
 
 ```
 $ source .venv/bin/activate
 ```
 
-If you are a Windows platform, you would activate the virtualenv like this:
+Se você estiver na plataforma Windows, você ativaria o virtualenv assim:
 
 ```
 % .venv\Scripts\activate.bat
 ```
 
-Once the virtualenv is activated, you can install the required dependencies.
+Depois que o virtualenv estiver ativado, você pode instalar as dependências necessárias.
 
 ```
 $ pip install -r requirements.txt
 ```
 
-At this point you can now synthesize the CloudFormation template for this code.
+Neste ponto, você pode sintetizar o modelo do CloudFormation para este código.
 
 ```
 $ cdk synth
 ```
 
-To add additional dependencies, for example other CDK libraries, just add
-them to your `setup.py` file and rerun the `pip install -r requirements.txt`
-command.
+## Comandos úteis
 
-## Useful commands
+ * `cdk ls`          lista todas as pilhas no aplicativo
+ * `cdk synth`       emite o modelo sintetizado do CloudFormation
+ * `cdk deploy`      implementa esta pilha na sua conta/região AWS padrão
+ * `cdk diff`        compara a pilha implantada com o estado atual
+ * `cdk docs`        abre a documentação do CDK
 
- * `cdk ls`          list all stacks in the app
- * `cdk synth`       emits the synthesized CloudFormation template
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk docs`        open CDK documentation
-
-Enjoy!
+Aproveite!
