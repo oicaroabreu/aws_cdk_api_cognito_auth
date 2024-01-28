@@ -1,5 +1,5 @@
 
-# Desenvolvimento de APIs Seguras com Amazon Cognito e AWS API Gateway
+# Deploy de Infraestrutura de APIs Seguras com Amazon Cognito e AWS API Gateway com CDK
 
 ![image](diagram.png)
 
